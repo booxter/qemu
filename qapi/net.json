@@ -944,7 +944,7 @@
 ##
 # @announce-self:
 #
-# Trigger generation of broadcast RARP frames to update network
+# Trigger generation of broadcast GARP/RARP frames to update network
 # switches.  This can be useful when network bonds fail-over the
 # active slave.
 #

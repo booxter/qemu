@@ -1334,7 +1334,7 @@ Front-end message types
   :reply payload: N/A
 
   Ask vhost user back-end to broadcast a fake RARP to notify the migration
-  is terminated for guest that does not support GUEST_ANNOUNCE.
+  is terminated.
 
   Only legal if feature bit ``VHOST_USER_F_PROTOCOL_FEATURES`` is
   present in ``VHOST_USER_GET_FEATURES`` and protocol feature bit

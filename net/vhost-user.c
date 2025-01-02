@@ -132,8 +132,6 @@ static ssize_t vhost_user_receive(NetClientState *nc, const uint8_t *buf,
                                   size_t size)
 {
     /* In case of RARP (message size is 60) notify backup to send a fake RARP.
-       This fake RARP will be sent by backend only for guest
-       without GUEST_ANNOUNCE capability.
      */
     if (size == 60) {
         NetVhostUserState *s = DO_UPCAST(NetVhostUserState, nc, nc);
